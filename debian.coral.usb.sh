@@ -3,6 +3,7 @@ echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sud
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y python3-wheel libedgetpu1-std python3-pycoral
+wget https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp36-cp36m-linux_armv7l.whl
 mkdir coral && cd coral
 git clone https://github.com/google-coral/pycoral.git
 cd pycoral
